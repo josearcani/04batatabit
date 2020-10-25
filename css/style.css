@@ -215,11 +215,20 @@ main {
   height: 12px;
   position: absolute;
   top: calc(50% - 6px);
-  left: calc(100% + 12px);
+  right: -24px;
   background: url('../assets/icons/right-icon.svg') center/cover no-repeat;
 }
 /* ------------ */
-
+/* boton izquierda segunda tabla*/
+.currency-table-container .currency-table-container__left-button {
+  width: 7px;
+  height: 12px;
+  position: absolute;
+  top: calc(50% - 6px);
+  left: -24px;
+  background: url('../assets/icons/left-icon.svg') center/cover no-repeat;
+}
+/* ---------------- */
 
 .currency-table-container table {
   width: 100%;
@@ -295,4 +304,19 @@ main {
   font-size: 1.2rem;
   line-height: 1.5rem;
   /* font-weight: 700; */
+}
+
+/* estilos que modifican la segunda tabla */
+
+.main-currency-table .currency-table__title.currency-table__title--blue {
+  color: var(--secondary-blue);
+}
+
+.currency-table-container.currency-table-container--shrunk {
+  width: 70%;
+  min-width: 190px;
+}
+
+.main-currency-table .currency-table__date.currency-table__date--colorless {
+  background-color: var(--soft-blue);
 }
