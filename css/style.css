@@ -205,7 +205,21 @@ main {
   max-width: 300px; /* importante para que no creza demaciado */
   height: 160px;  /* conforme al diseño */
   margin-bottom: 16px;
+  /* posicion para boton flotante */
+  position: relative;
 }
+
+/* botton derecha */
+.currency-table-container .currency-table-container__right-button {
+  width: 7px;
+  height: 12px;
+  position: absolute;
+  top: calc(50% - 6px);
+  left: calc(100% + 12px);
+  background: url('../assets/icons/right-icon.svg') center/cover no-repeat;
+}
+/* ------------ */
+
 
 .currency-table-container table {
   width: 100%;
