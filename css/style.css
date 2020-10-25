@@ -1,0 +1,279 @@
+/* 
+1. Posicionamiento
+2. Modelo de caja
+3. Tipografia
+4. Visuales (boxshadow border-radius)
+5. otros
+ */
+:root {
+  --linear-gradient: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+  --bitcoin-orage:#F7931A;
+	--soft-orange:#FFE9D5;
+	--secondary-blue:#FFE9D5; 
+	--soft-blue:#E7F5FF;
+	--warm-black:#201E1C;
+	--warm-blackplus1:#282623;
+	--gray:#BABABA;
+	--off-white:#FAF8F7;
+	--just-white:#FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%; /* para emplear rem */
+  font-family: 'DM Sans', sans-serif; /* ya que es la fuente dominante en la página */
+}
+
+/*
+font-family: 'Inter', sans-serif;
+*/
+
+/* ----------header--------- */
+
+header {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 320px; /* ancho mínimo para móviles */
+  height: 350px;
+  width: 100%;
+  text-align: center;
+  background: var(--linear-gradient);
+}
+
+header img {
+  width: 150px;
+  height: 24px;
+  margin-top: 40px;
+  align-self: center; /* para centrar un solo elemento hijo de un flex container */
+  margin-bottom: 36px;
+}
+
+.header__title {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  align-self: center;
+  height: 138px;
+  /* border: 1px solid black; */
+}
+
+.header__title h1 {
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  font-weight: 700;
+  color: var(--just-white);
+  margin-bottom: 20px;
+}
+.header__title p {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  color: var(--soft-orange);
+/*   margin-bottom: 35px; */
+}
+
+.header__button {
+  /* display: inline-block; */
+  position: absolute;
+  height: 48px; /* definidos en figma */
+  width: 229px;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  background-color: var(--off-white);
+  /* letras */
+  text-decoration: none;
+  color: var(--warm-black);
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-radius: 4px;
+  box-shadow: 0 2px 9px var(--warm-blackplus1) ;
+  /* box-shadow: -1px 1px 4px var(--warm-blackplus1) ; */
+}
+.header__button span {
+  background-image: url('../assets/icons/black-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 17px;
+  height: 8px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+
+/* -------main------- */
+
+main {
+  width: 100%;
+  height: auto; /* el contenido definira su altura */
+  background-color: #e5e5e5;
+}
+
+
+/* -----main-exchange-container---- */
+
+.main-exchange-container {
+  width: 100%;
+  height: auto;
+  /* margin-top: 45px; */
+  padding-top: 45px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* background bitcoin */
+.main-exchange-container .bitcoin-background {
+  width: 195px;
+  height: 195px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  /* background-color: var(--bitcoin-orage); */
+  background-image: url('../assets/img/bitcoin.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-exchange-container__title {
+  width: 90%;
+  min-width: 288px; /* para mobiles */
+  max-width: 900px; /* para responsive */
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.main-exchange-container__title h2 {
+  margin-bottom: 24px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+}
+
+.main-exchange-container__title p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #757575;
+}
+
+/* ----main---tabla-container */
+
+.main-currency-table {
+  width: 70%;
+  margin: 0 auto;
+  min-width: 235px; /* minimo para responsive */
+  max-width: 500px; /* mas grande se vera mal */
+  height: 360px;
+  /* fuentes especificas */
+  font-family: 'Inter', sans-serif;  
+}
+
+/* -----main----tabla-title */
+
+.main-currency-table .currency-table__title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+  color: #FF9536;
+  text-align: left;
+  /* copiado de la clase de abajo */
+  width: 90%;
+  margin: 0 auto;
+  min-width: 230px; /* valor importante para responsive */
+  max-width: 300px; /* importante para que no creza demaciado */
+  /* ----------------- */
+  padding-left: 12px;
+  margin-bottom: 10px;
+}
+
+/* -----main----tabla--- */
+
+.currency-table-container {
+  width: 90%;
+  margin: 0 auto;
+  min-width: 230px; /* valor importante para responsive */
+  max-width: 300px; /* importante para que no creza demaciado */
+  height: 160px;  /* conforme al diseño */
+  margin-bottom: 25px;
+}
+
+.currency-table-container table {
+  width: 100%;
+  height: 100%;
+}
+
+/* dimencionamos la caja */
+.currency-table-container td {
+  width: 50%; /* cada tabla ocupa ese espacio */
+  font-weight: 500;
+  font-size: 1.6rem; 
+  line-height: 1.9rem;
+  color: #b5b8ac;
+  background-color: var(--just-white);
+  text-align: left;
+  padding-left: 12px;
+}
+
+/* columna derecha con estilos */
+
+.currency-table-container .table--right {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #757575;
+}
+
+/* bordes redondeados */
+
+.currency-table-container .table--top-left {
+  border-top-left-radius: 8px;
+}
+.currency-table-container .table--top-right {
+  border-top-right-radius: 8px;
+}
+.currency-table-container .table--bottom-left {
+  border-bottom-left-radius: 8px;
+}
+.currency-table-container .table--bottom-right {
+  border-bottom-right-radius: 8px;
+}
+
+/* iconos down and up */
+
+.currency-table-container .down {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  background: url(../assets/icons/trending-down.svg) center/cover no-repeat;
+}
+
+.currency-table-container .up {
+  display: inline-block; 
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  background: url(../assets/icons/trending-up.svg) center/cover no-repeat;
+}
+
+/* update message */
+
+/* .main-currency-table .currency-table__date {
+  min-width: 175px;
+  max-width: 200px;
+  width: 70%;
+  height: 30px;
+  margin: 0 auto;
+  border:1px solid black;
+
+} */
