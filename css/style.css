@@ -344,6 +344,7 @@ main {
   height: auto;
   padding: 64px 16px 40px;  /* valores tomados defigma para las tajetas */
   background-color: var(--warm-black);
+  margin-bottom: 32px;
 }
 
 .main-product-detail .product-detail__heading {
@@ -367,5 +368,56 @@ main {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
+  color: #808080;
+}
+
+/* producto cards */
+
+.product-card .product-card__item {
+  width: 100%;
+  min-width: 288px;
+  max-width: 400px; /* para evitar que cresca grotescamente */
+  height: auto;
+  margin-bottom: 16px;
+  background-color: var(--warm-blackplus1);
+  border-radius: 4px;
+  padding: 15px 16px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0,.16);
+  line-height: 1.8rem;
+}
+
+/* icons---- */
+.product-card__item .icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  /* margin-top: 14px; */
+  margin-bottom: 10px;
+}
+
+.product-card__item .clock {
+  background: url('../assets/icons/clock.svg') center/contain no-repeat ;
+}
+.product-card__item .eye {
+  background: url('../assets/icons/eye.svg') center/contain no-repeat ;
+  width: 24px;  /* para que el icono se renderice completo */
+}
+.product-card__item .money {
+  background: url('../assets/icons/dollar-sign.svg') center/contain no-repeat ;
+}
+.product-card__item .check {
+  background: url('../assets/icons/check-circle.svg') center/contain no-repeat ;
+}
+
+/* titulo de tarjeta */
+.product-card__item .product-card__title {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--just-white);
+}
+.product-card__item .product-card__text {
+  font-size: 1.4rem;
+  font-weight: 500;
   color: #808080;
 }
