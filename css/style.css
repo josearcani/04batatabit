@@ -445,3 +445,132 @@ main {
 
 /* Seccion de planes */
 
+.main-plans {
+  width: 100%;
+  min-width: 320px;
+  background-color: #E5E5E5;
+}
+
+.main-plans__heading {
+  padding-top: 64px;
+  width: 90%;
+  height: auto;
+  min-width: 290px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.main-plans__heading h2 {
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  font-weight: 700;
+  color: var(--warm-black);
+  margin-bottom: 24px;
+}
+
+.main-plans__heading p {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  color: #757575;
+}
+
+/* ----slider de precios---- */
+
+.main-plans .main-plans__slider {
+
+}
+
+/* ----cards----- */
+
+.main-plans__card {
+  width: 50%;
+  min-width: 190px;
+  max-width: 300px;
+  min-height: 250px;
+  margin: 0 auto;
+  position: relative;
+  padding: 30px 15px 20px;
+  text-align: center;
+  background-color: var(--just-white);
+  box-shadow: 0 4px 8px rgba(89, 73, 30, .16);
+  border-radius: 8px;
+}
+
+.main-plans__card .recommened {
+  width: 110px;
+  height: 30px;
+  position: absolute;
+  top: -15px;
+  left: calc(50% - 55px);
+  padding: 8px;
+  line-height: 1.4rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  background-color: var(--bitcoin-orage);
+  color: var(--just-white);
+  font-family: 'Inter', sans-serif;
+  border-radius: 8px;
+}
+
+.card-info {
+  width: 100%;
+  height: 100%;
+}
+
+.card-info .card-info__title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.card-info .card-info__price {
+  margin-bottom: 16px;
+  font-size: 5.2rem;
+  line-height: 6.2rem;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  display: inline-block; /*para posicionar mejor el $*/
+}
+
+.card-info .card-info__price span {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-weight: 500;
+  /* vertical-align: text-top; */
+  position: absolute;
+  top: 15px;
+  left: -11px;
+}
+
+.card-info .card-info__savings {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  color: #757575;
+  margin-bottom: 16px;
+}
+
+.card-info .card-info__ca {
+  width: 151px;
+  height: 48px;
+  border: 2px solid #F7931A;
+  background-color: var(--off-white);
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.8rem;
+  font-weight: 700;
+}
+
+.card-info .card-info__ca span {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url('../assets/icons/arrow-right-orange.svg') center/cover no-repeat;
+  vertical-align: text-bottom;
+}
