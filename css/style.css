@@ -128,6 +128,8 @@ main {
   padding-top: 45px;
   margin-bottom: 30px;
   text-align: center;
+  /* para posicionar la batata */
+  position: relative;
 }
 
 /* background bitcoin */
@@ -319,4 +321,14 @@ main {
 
 .main-currency-table .currency-table__date.currency-table__date--colorless {
   background-color: var(--soft-blue);
+}
+
+/* logo batata entre secciones */
+.main-exchange-container .main-exchange-container__batata-logo {
+  width: 40px;
+  height: 24px;
+  position: absolute;
+  top: calc(100% - 12px);
+  left: calc(50% - 20px);
+  background: url('../assets/img/batata-logo.svg') center/cover no-repeat;
 }
