@@ -27,6 +27,7 @@
 html {
   font-size: 62.5%; /* para emplear rem */
   font-family: 'DM Sans', sans-serif; /* ya que es la fuente dominante en la página */
+  scroll-behavior: smooth;  /* bonita transicion */
 }
 
 /*
@@ -80,13 +81,14 @@ header img {
 }
 
 .header__button {
-  /* display: inline-block; */
+  display: inline-block;
   position: absolute;
   height: 48px; /* definidos en figma */
   width: 229px;
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 10;    /* importante <a> posicionado absolute deja de ser clickeable parcialmente en este caso */
   padding: 15px;
   background-color: var(--off-white);
   /* letras */
@@ -432,3 +434,14 @@ main {
   height: 50vh;
   background: url('../assets/img/bitcoin-baby2x.jpg') center/cover no-repeat;
 }
+
+.bitcoin-baby-img h2 {
+  text-align: center;
+  padding-top: 64px; /* taken from figma */
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  color: var(--just-white);
+}
+
+/* Seccion de planes */
+
