@@ -8,8 +8,8 @@
 :root {
   --linear-gradient: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
   --bitcoin-orage:#F7931A;
-	--soft-orange:#FFE9D5;
-	--secondary-blue:#FFE9D5; 
+	--soft-orange: #FFE9D5;
+	--secondary-blue:#1A9AF7; 
 	--soft-blue:#E7F5FF;
 	--warm-black:#201E1C;
 	--warm-blackplus1:#282623;
@@ -204,7 +204,7 @@ main {
   min-width: 200px; /* valor importante para responsive */
   max-width: 300px; /* importante para que no creza demaciado */
   height: 160px;  /* conforme al diseño */
-  margin-bottom: 25px;
+  margin-bottom: 16px;
 }
 
 .currency-table-container table {
@@ -268,12 +268,17 @@ main {
 
 /* update message */
 
-/* .main-currency-table .currency-table__date {
-  min-width: 175px;
-  max-width: 200px;
-  width: 70%;
+.main-currency-table .currency-table__date {
+  width: 175px;
   height: 30px;
   margin: 0 auto;
-  border:1px solid black;
+  padding: 8px;
+  background-color: var(--soft-orange);
+  border-radius: 8px;
+}
 
-} */
+.main-currency-table .currency-table__date p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  /* font-weight: 700; */
+}
