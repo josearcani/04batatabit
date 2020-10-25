@@ -312,6 +312,9 @@ main {
 
 .main-currency-table .currency-table__title.currency-table__title--blue {
   color: var(--secondary-blue);
+  /* valores redimensionados para posicionar mejor el titulo cuando crece la tabla */
+  width: 70%;
+  min-width: 190px; /* valor importante para responsive */
 }
 
 .currency-table-container.currency-table-container--shrunk {
