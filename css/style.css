@@ -114,6 +114,7 @@ header img {
 
 main {
   width: 100%;
+  min-width: 320px;
   height: auto; /* el contenido definira su altura */
   background-color: #e5e5e5;
 }
@@ -123,6 +124,7 @@ main {
 
 .main-exchange-container {
   width: 100%;
+  min-width: 320px;
   height: auto;
   padding-top: 45px;
   /* margin-bottom: 30px; */
@@ -344,7 +346,7 @@ main {
   height: auto;
   padding: 64px 16px 40px;  /* valores tomados defigma para las tajetas */
   background-color: var(--warm-black);
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 }
 
 .main-product-detail .product-detail__heading {
@@ -377,7 +379,9 @@ main {
   width: 100%;
   min-width: 288px;
   max-width: 400px; /* para evitar que cresca grotescamente */
-  height: auto;
+  min-height: 150;  /* con auto tambien funcionó, pero creo que es mejor así */
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 16px;
   background-color: var(--warm-blackplus1);
   border-radius: 4px;
@@ -391,7 +395,6 @@ main {
   width: 24px;
   height: 24px;
   display: inline-block;
-  /* margin-top: 14px; */
   margin-bottom: 10px;
 }
 
@@ -399,8 +402,7 @@ main {
   background: url('../assets/icons/clock.svg') center/contain no-repeat ;
 }
 .product-card__item .eye {
-  background: url('../assets/icons/eye.svg') center/contain no-repeat ;
-  width: 24px;  /* para que el icono se renderice completo */
+  background: url('../assets/icons/eye.svg') center/contain no-repeat;
 }
 .product-card__item .money {
   background: url('../assets/icons/dollar-sign.svg') center/contain no-repeat ;
@@ -420,4 +422,13 @@ main {
   font-size: 1.4rem;
   font-weight: 500;
   color: #808080;
+}
+
+/* imagen bitcoin baby */
+
+.bitcoin-baby-img {
+  width: 100%;
+  min-width: 320px; /* minimo que existe en pantallas */
+  height: 50vh;
+  background: url('../assets/img/bitcoin-baby2x.jpg') center/cover no-repeat;
 }
