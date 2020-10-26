@@ -172,6 +172,15 @@ main {
 
 /* ----main---tabla-container */
 
+/* scroll para las tarjetas */
+/* .main-tables-container {
+  display: flex;
+  height: auto;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+} */
+/* ------------------------ */
 .main-currency-table {
   width: 70%;
   margin: 0 auto;
@@ -179,7 +188,9 @@ main {
   max-width: 500px; /* mas grande se vera mal */
   height: 360px;
   /* fuentes especificas */
-  font-family: 'Inter', sans-serif;  
+  font-family: 'Inter', sans-serif;
+  /* para quesea un item del scroll horizontal */
+  /* scroll-snap-align: center; */
 }
 
 /* -----main----tabla-title */
