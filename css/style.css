@@ -380,7 +380,7 @@ main {
 .product-card .product-card__item {
   width: 100%;
   min-width: 288px;
-  max-width: 400px; /* para evitar que cresca grotescamente */
+  max-width: 350px; /* para evitar que cresca grotescamente */
   min-height: 150;  /* con auto tambien funcionó, pero creo que es mejor así */
   margin-left: auto;
   margin-right: auto;
@@ -492,7 +492,7 @@ main {
 .main-plans__card {
   width: 50%;
   min-width: 190px;
-  max-width: 300px;
+  max-width: 250px; /*la tarjeta queda mejor*/
   min-height: 250px;
   margin: 20px 4px 20px;
   position: relative;

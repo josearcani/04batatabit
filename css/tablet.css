@@ -1,0 +1,11 @@
+.product-card {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+
+.main-plans .main-plans__slider {
+  justify-content: center;
+}
