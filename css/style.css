@@ -449,6 +449,7 @@ main {
   width: 100%;
   min-width: 320px;
   background-color: #E5E5E5;
+  padding-bottom: 50px; /*hace espacio contra el footer*/
 }
 
 .main-plans__heading {
