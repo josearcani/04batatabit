@@ -479,7 +479,11 @@ main {
 /* ----slider de precios---- */
 
 .main-plans .main-plans__slider {
-
+  display: flex;
+  overflow-x: scroll;
+  height: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
 }
 
 /* ----cards----- */
@@ -489,8 +493,9 @@ main {
   min-width: 190px;
   max-width: 300px;
   min-height: 250px;
-  margin: 0 auto;
+  margin: 20px 4px 20px;
   position: relative;
+  scroll-snap-align: center;  /*regla para centrar las tarjetas y que no se queden cortadas*/
   padding: 30px 15px 20px;
   text-align: center;
   background-color: var(--just-white);
@@ -573,4 +578,24 @@ main {
   display: inline-block;
   background: url('../assets/icons/arrow-right-orange.svg') center/cover no-repeat;
   vertical-align: text-bottom;
+}
+
+.recommened.recommened--limited {
+  background-color: var(--gray);
+  color: var(--warm-black);
+}
+
+.recommened.recommened--basic {
+  background-color: var(--secondary-blue);
+}
+
+/* limitado */
+.card-info__ca.card-info__ca--limited {
+  color: var(--just-white);
+  background-color: #282623;
+} 
+
+.main-plans__card.main-plans__card--limited {
+  background-color: var(--warm-black);
+  color: var(--off-white);
 }
