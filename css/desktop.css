@@ -19,11 +19,10 @@ footer .right img {
   flex-direction: column;
 }
 
-.main-exchange-container .block {
-  width: 50%;
-}
+.main-exchange-container .block,
 .main-exchange-container .main-tables-container {
   width: 50%;
+  max-width: 500px;
 }
 
 .main-exchange-container {
