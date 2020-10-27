@@ -173,24 +173,16 @@ main {
 /* ----main---tabla-container */
 
 /* scroll para las tarjetas */
-/* .main-tables-container {
-  display: flex;
-  height: auto;
-  overflow-x: scroll;
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x proximity;
-} */
+
 /* ------------------------ */
 .main-currency-table {
   width: 70%;
   margin: 0 auto;
   min-width: 235px; /* minimo para responsive */
   max-width: 500px; /* mas grande se vera mal */
-  height: 360px;
+  height: 270px;
   /* fuentes especificas */
   font-family: 'Inter', sans-serif;
-  /* para quesea un item del scroll horizontal */
-  /* scroll-snap-align: center; */
 }
 
 /* -----main----tabla-title */
@@ -443,7 +435,7 @@ main {
   width: 100%;
   min-width: 320px; /* minimo que existe en pantallas */
   height: 50vh;
-  background: url('../assets/img/bitcoin-baby2x.jpg') center/cover no-repeat;
+  background: url('../assets/img/bitcoin-babyx1.jpg') center/cover no-repeat;
 }
 
 .bitcoin-baby-img h2 {

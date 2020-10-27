@@ -1,3 +1,14 @@
+/* header */
+header {
+  height: 250px;
+}
+
+/* tables */
+.main-tables-container {
+  display: flex;
+}
+
+/* cards of information */
 .product-card {
   display: flex;
   flex-wrap: wrap;
@@ -5,7 +16,24 @@
   margin: 0 auto;
 }
 
+/* hide left and right arrows */
+.currency-table-container .currency-table-container__right-button,
+.currency-table-container .currency-table-container__left-button {
+  display: none;
+}
 
+/* image baby */
+.bitcoin-baby-img {
+  height: 50vh;
+  background: url('../assets/img/bitcoin-babyx2.jpg') center/cover no-repeat;
+}
+
+/* fixes the width of tables */
+.main-currency-table {
+  width: auto;
+}
+
+/* justify card prices */
 .main-plans .main-plans__slider {
   justify-content: center;
 }
