@@ -37,3 +37,17 @@ header {
 .main-plans .main-plans__slider {
   justify-content: center;
 }
+
+/* font */
+.bitcoin-baby-img h2 {
+  font-size: 3.4rem;
+}
+
+.left ul {
+  display: flex;
+}
+
+.left li {
+  margin-left: 10px;
+  margin-right: 10px;
+}

@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 768px)">
+  <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 1000px)">
 </head>
 <body>
   <header>
@@ -21,11 +22,13 @@
     <!-- seccion tablas y titulo -->
     <section class="main-exchange-container">
       <!-- background bitcoin -->
-      <div class="bitcoin-background"></div>
-      <!-- subtitulo y parrafo -->
-      <div class="main-exchange-container__title">
-        <h2>Visibilizamos todas las tasas de cambio.</h2>
-        <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
+      <div class="block"> <!--div necesario para desktop-->
+        <div class="bitcoin-background"></div>
+        <!-- subtitulo y parrafo -->
+        <div class="main-exchange-container__title">
+          <h2>Visibilizamos todas las tasas de cambio.</h2>
+          <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
+        </div>
       </div>
       <!-- nueva seccion para la tabla  -->
       <section class="main-tables-container">

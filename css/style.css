@@ -635,3 +635,8 @@ footer .left ul {
   text-decoration: none;
   color: var(--just-white);
 }
+
+footer .right img {
+  width: 90px;
+  height: 70px;
+}
