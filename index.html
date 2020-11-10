@@ -32,8 +32,8 @@
       </div>
       <!-- nueva seccion para la tabla  -->
       <section class="main-tables-container">
-        <div class="main-currency-table">
-          <p class="currency-table__title">Monedas</p>
+        <div class="main-currency-table active">
+          <p class="currency-table__title" id="table-title">Monedas</p>
           <!-- la tabla -->
           <div class="currency-table-container">
             <table>
@@ -54,7 +54,7 @@
                 <td class="table--bottom-right table--right">$ 4.96 <span class="down"></span></td>
               </tr>
             </table>
-            <div class="currency-table-container__right-button"></div>
+            <div class="currency-table-container__right-button" id="nextBtn"></div>
           </div>
           <div class="currency-table__date">
             <p><b>Actualizado:</b> 19 Julio 23:05</p>
@@ -62,7 +62,7 @@
         </div>
         <div class="main-currency-table">
           <p class="currency-table__title currency-table__title--blue">Comisiones</p>
-          <!-- la tabla -->
+          
           <div class="currency-table-container currency-table-container--shrunk">
             <table>
               <tr>
@@ -82,17 +82,15 @@
                 <td class="table--bottom-right table--right">$ 14.96</span></td>
               </tr>
             </table>
-            <!-- boton flotante -->
-            <div class="currency-table-container__left-button"></div>
+            
+            <div class="currency-table-container__left-button" id="prevBtn"></div>
           </div>
           <div class="currency-table__date currency-table__date--colorless">
             <p><b>Actualizado:</b> 19 Julio 23:05</p>
           </div>
         </div>
       </section>
-      <!--  seccion 2 para la tabla  -->
-      <!-- <section class="main-tables-container">
-      </section> -->
+
       <!-- logo de batata entre secciones -->
       <div class="main-exchange-container__batata-logo"></div>
     </section>
@@ -191,5 +189,6 @@
       <img src="./assets/img/batata-footer.svg" alt="logo de batatabit">
     </section>
   </footer>
+  <script src="./app.js"></script>
 </body>
 </html>
