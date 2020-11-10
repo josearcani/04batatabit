@@ -31,6 +31,10 @@ header {
 /* fixes the width of tables */
 .main-currency-table {
   width: auto;
+  /* las tres lineas reacomodan las tables en vista de tablet y desktop */
+  position: relative;
+  opacity: 1;
+  visibility: visible;
 }
 
 /* justify card prices */
