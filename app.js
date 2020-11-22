@@ -1,8 +1,18 @@
 const c = console.log;
 const nextBtn = document.getElementById('nextBtn');
 const prevBtn = document.getElementById('prevBtn');
-
 const card = document.querySelectorAll('.main-currency-table');
+
+//questions 
+const questions = document.querySelectorAll('.question-container__item')
+
+questions.forEach(function(question) {
+  const btn = question.querySelector('.question-container__icons')
+  btn.addEventListener('click', function() {
+    question.classList.toggle('show-text')
+  })
+})
+
 
 nextBtn.addEventListener('click', function() {
   card.forEach(function(item) {
