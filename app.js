@@ -9,6 +9,13 @@ const questions = document.querySelectorAll('.question-container__item')
 questions.forEach(function(question) {
   const btn = question.querySelector('.question-container__icons')
   btn.addEventListener('click', function() {
+    // c(question)
+    questions.forEach(function(item) {
+      if(item !== question) {
+        item.classList.remove('show-text')
+      }
+      // c(item)
+    })
     question.classList.toggle('show-text')
   })
 })
